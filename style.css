@@ -61,7 +61,7 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding-top:18px;color
   color: var(--accent);
 }
 .news > li.highlight.milestone > span {
-  color: #FCBF49;
+  /* color: #FCBF49; */
 }
 .news > li.highlight.milestone > span > svg {
   fill: currentColor;
