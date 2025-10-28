@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name – Publications</title>
+  <meta name="description" content="Publications of Your Name" />
+  <link rel="canonical" href="/publications.html" />
+  <link href="style.css" rel="stylesheet" />
+  <style>  
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    main{display:grid;grid-template-columns:var(--sidebar) 1fr;gap:28px;margin-top:26px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow)}
+    .dot{width:6px;height:6px;background:#9ca3af;border-radius:50%;display:inline-block}
+    .pub{margin:10px 0;padding:10px 12px;border:1px solid var(--border);border-radius:10px;background:#fff}
+    .venue{color:var(--muted)}
+    details{margin-top:6px}
+    pre{white-space:pre-wrap;background:#f8fafc;border:1px solid var(--border);border-radius:8px;padding:10px}
+    @media (max-width:760px){main{grid-template-columns:1fr}.sidebar{position:relative;top:auto}}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap topbar" style="display: flex; color: var(--accent-fg);">
+      <div class="brand alegreya-1orb4"><a href="index.html" aria-label="Home">Joëlle Hanna</a></div>
+      <nav class="navbar" aria-label="Primary">
+        <ul>
+          <li><a style="color: var(--accent-fg);" href="index.html">Home</a></li>
+          <li><a style="color: var(--accent-fg);" href="cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<div class="wrap">
+  <main>
+    <aside class="sidebar card" aria-label="Profile">
+      <div class="profile">
+        <img src="images/profile.jpg" alt="Profile photo" class="avatar" />
+        <div class="name">Joëlle Hanna</div>
+        <p class="bio">PhD Candidate in Computer Vision and Remote Sensing.</p>
+        <p class="affil">School of Computer Science</p>
+        <p class="affil">University of St.Gallen</p>
+        <p class="affil">Switzerland</p>
+      </div>
+      <div class="links">
+        <ul>
+          <li><i data-lucide="mail"></i> <a href="mailto:joellekhanna@gmail.com">Email</a></li>
+          <li><i data-lucide="linkedin"></i> <a href="https://www.linkedin.com/in/joelle-hanna/">LinkedIn</a></li>
+          <li><i data-lucide="github"></i> <a href="https://github.com/joellehanna">GitHub</a></li>
+          <li><i data-lucide="graduation-cap"></i> <a href="https://scholar.google.com/citations?user=4nEFMGAAAAAJ&hl=en&oi=ao">Google Scholar</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section class="card content">
+      <h1 class="alegreya-1orb4">Publications</h1>
+      <p>Below is a short, hand‑curated list. For a complete list, see Google Scholar.</p>
+
+      <h3 class="year">2025</h3>
+      <div class="pub">
+        <strong>Know Your Attention Maps: Class-specific Token Masking for Weakly Supervised Semantic Segmentation</strong><br/>
+        <strong>Joëlle Hanna</strong>, Damian Borth<br/>
+        <span class="venue">ICCV 2025</span> · <a href="https://arxiv.org/abs/2507.06848">paper</a> · <a href="https://github.com/HSG-AIML/TokenMasking-WSSS">code</a>
+        <details><summary>BibTeX</summary>
+          <pre>@InProceedings{Hanna_2025_ICCV,
+    author    = {Hanna, Jo\"elle and Borth, Damian},
+    title     = {Know Your Attention Maps: Class-specific Token Masking for Weakly Supervised Semantic Segmentation},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2025},
+    pages     = {23763-23772}
+}
+</pre>
+        </details>
+      </div>
+      <div class="pub">
+        <strong>
+	SAR-to-RGB Translation with Latent Diffusion for Earth Observation</strong><br/>
+        Kaan Aydin, <strong>Joëlle Hanna</strong>, Damian Borth<br/>
+        <span class="venue">arxiv</span> · <a href="https://arxiv.org/abs/2504.11154">paper</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Aydin2025SARtoRGBTW,
+  title={SAR-to-RGB Translation with Latent Diffusion for Earth Observation},
+  author={Kaan Aydin and Joelle Hanna and Damian Borth},
+  journal={ArXiv},
+  year={2025},
+  volume={abs/2504.11154},
+  url={https://api.semanticscholar.org/CorpusID:277787415}
+}</pre>
+        </details>
+      </div>
+
+      <h3 class="year">2024</h3>
+      <div class="pub">
+        <strong>
+Neural plasticity-inspired foundation model for observing the earth crossing modalities</strong><br/>
+        Zhitong Xiong, Yi Wang, Fahong Zhang, Adam J Stewart, <strong>Joëlle Hanna</strong>, Damian Borth, Ioannis Papoutsis, Bertrand Le Saux, Gustau Camps-Valls, Xiao Xiang Zhu<br/>
+        <span class="venue">CoRR 2024</span> · <a href="https://arxiv.org/abs/2403.15356">paper</a> · <a href="https://github.com/zhu-xlab/DOFA">code</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Xiong2024NeuralPF,
+  title={Neural Plasticity-Inspired Foundation Model for Observing the Earth Crossing Modalities},
+  author={Zhitong Xiong and Yi Wang and Fahong Zhang and Adam J. Stewart and Joelle Hanna and Damian Borth and Ioannis Papoutsis and Bertrand Le Saux and Gustau Camps-Valls and Xiao Xiang Zhu},
+  journal={ArXiv},
+  year={2024},
+  volume={abs/2403.15356},
+  url={https://api.semanticscholar.org/CorpusID:271708675}
+}</pre>
+        </details>
+      </div>
+
+      <h3 class="year">2023</h3>
+      <div class="pub">
+        <strong>
+Ben-Ge: Extending Bigearthnet with Geographical and Environmental Data.</strong><br/>
+        Michael Mommert, Nicolas Kesseli, <strong>Joëlle Hanna</strong>, Linus Scheibenreif, Damian Borth, Begüm Demir<br/>
+        <span class="venue">IGARSS 2023 - IEEE International Geoscience and Remote Sensing Symposium</span> · <a href="https://arxiv.org/abs/2307.01741">paper</a> · <a href="https://github.com/HSG-AIML/ben-ge">code</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Mommert2023BenGeEB,
+      title={Ben-Ge: Extending Bigearthnet with Geographical and Environmental Data},
+      author={Michael Mommert and Nicolas Kesseli and Joelle Hanna and Linus Scheibenreif and Damian Borth and Beg{\"u}m Demir},
+      journal={IGARSS 2023 - 2023 IEEE International Geoscience and Remote Sensing Symposium},
+      year={2023},
+      pages={1016-1019},
+      url={https://api.semanticscholar.org/CorpusID:259342658}
+    }</pre>
+        </details>
+      </div>
+      <div class="pub">
+        <strong>
+Physics-Guided Multitask Learning for Estimating Power Generation and CO2 Emissions From Satellite Imagery</strong><br/>
+        <strong>Joëlle Hanna</strong>, Michael Mommert, Damian Borth<br/>
+        <span class="venue">IEEE Transactions on Geoscience and Remote Sensing</span> · <a href="https://ieeexplore.ieee.org/document/10153694">paper</a> · <a href="https://github.com/HSG-AIML/RemoteSensingCO2Estimation">code</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Hanna2023PhysicsGuidedML,
+      title={Physics-Guided Multitask Learning for Estimating Power Generation and CO2 Emissions From Satellite Imagery},
+      author={Joelle Hanna and Damian Borth and Michael Mommert},
+      journal={IEEE Transactions on Geoscience and Remote Sensing},
+      year={2023},
+      volume={61},
+      pages={1-12},
+      url={https://api.semanticscholar.org/CorpusID:259300032}
+    }</pre>
+        </details>
+      </div>
+      <div class="pub">
+        <strong>
+Sparse multimodal vision transformer for weakly supervised semantic segmentation</strong><br/>
+        <strong>Joëlle Hanna</strong>, Michael Mommert, Damian Borth<br/>
+        <span class="venue">CVPR EarthVision Workshop</span> · <a href="https://openaccess.thecvf.com/content/CVPR2023W/EarthVision/papers/Hanna_Sparse_Multimodal_Vision_Transformer_for_Weakly_Supervised_Semantic_Segmentation_CVPRW_2023_paper.pdf">paper</a> · <a href="https://github.com/HSG-AIML/sparse-vit-wsss">code</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Hanna2023SparseMV,
+  title={Sparse Multimodal Vision Transformer for Weakly Supervised Semantic Segmentation},
+  author={Joelle Hanna and Michael Mommert and Damian Borth},
+  journal={2023 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  year={2023},
+  pages={2145-2154},
+  url={https://api.semanticscholar.org/CorpusID:260911594}}</pre>
+        </details>
+      </div>
+      <h3 class="year">2022</h3>
+      <div class="pub">
+        <strong>
+Self-supervised vision transformers for land-cover segmentation and classification.</strong><br/>
+        <strong>Joëlle Hanna</strong>, Linus Scheibenreif, Michael Mommert, Damian Borth<br/>
+        <span class="venue">CVPR EarthVision Workshop</span> · <a href="https://openaccess.thecvf.com/content/CVPR2022W/EarthVision/papers/Scheibenreif_Self-Supervised_Vision_Transformers_for_Land-Cover_Segmentation_and_Classification_CVPRW_2022_paper.pdf">paper</a> · <a href="https://github.com/HSG-AIML/SSLTransformerRS">code</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Scheibenreif2022SelfsupervisedVT,
+  title={Self-supervised Vision Transformers for Land-cover Segmentation and Classification},
+  author={Linus Scheibenreif and Joelle Hanna and Michael Mommert and Damian Borth},
+  journal={2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW)},
+  year={2022},
+  pages={1421-1430},
+  url={https://api.semanticscholar.org/CorpusID:249916739}
+}</pre>
+        </details>
+      </div>
+      <h3 class="year">2021</h3>
+      <div class="pub">
+        <strong>
+Multitask Learning for Estimating Power Plant Greenhouse Gas Emissions from Satellite Imagery</strong><br/>
+        <strong>Joëlle Hanna</strong>, Michael Mommert, Linus Scheibenreif, Damian Borth<br/>
+        <span class="venue">NeurIPS Workshop: Tackling climate change with machine learning</span> · <a href="https://www.alexandria.unisg.ch/server/api/core/bitstreams/d520abfb-c25d-495a-98ca-87e53c6088fb/content">paper</a> · <a href="https://github.com/HSG-AIML/RemoteSensingCO2Estimation">code</a>
+        <details><summary>BibTeX</summary>
+          <pre>@inproceedings{hanna2021multitask,
+  title={Multitask learning for estimating power plant greenhouse gas emissions from satellite imagery},
+  author={Hanna, Jo{\"e}lle and Mommert, Michael and Scheibenreif, Linus Mathias and Borth, Damian},
+  year={2021},
+  organization={Tackling Climate Change with Machine Learning workshop at NeurIPS.}
+}</pre>
+        </details>
+      </div>
+      <div class="pub">
+        <strong>
+Power plant classification from remote imaging with deep learning</strong><br/>
+        Michael Mommert, Linus Scheibenreif, <strong>Joëlle Hanna</strong>, Damian Borth<br/>
+        <span class="venue">IGARSS 2021 - IEEE International Geoscience and Remote Sensing Symposium</span> · <a href="https://arxiv.org/abs/2107.10894">paper</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Mommert2021PowerPC,
+  title={Power Plant Classification from Remote Imaging with Deep Learning},
+  author={Michael Mommert and Linus Scheibenreif and Joelle Hanna and Damian Borth},
+  journal={2021 IEEE International Geoscience and Remote Sensing Symposium IGARSS},
+  year={2021},
+  pages={6391-6394},
+  url={https://api.semanticscholar.org/CorpusID:236318275}
+}</pre>
+        </details>
+      </div>
+
+      <h3 class="year">2020</h3>
+      <div class="pub">
+        <strong>
+	What is trending on Wikipedia? capturing trends and language biases across Wikipedia editions</strong><br/>
+        Volodymyr Miz, <strong>Joëlle Hanna</strong>, Nicolas Aspert, Benjamin Ricaud, Pierre Vandergheynst<br/>
+        <span class="venue">Companion proceedings of the Web conference 2020</span> · <a href="https://arxiv.org/abs/2002.06885">paper</a>
+        <details><summary>BibTeX</summary>
+          <pre>@article{Miz2020WhatIT,
+  title={What is Trending on Wikipedia? Capturing Trends and Language Biases Across Wikipedia Editions},
+  author={Volodymyr Miz and Joelle Hanna and Nicolas Aspert and Benjamin Ricaud and Pierre Vandergheynst},
+  journal={Companion Proceedings of the Web Conference 2020},
+  year={2020},
+  url={https://api.semanticscholar.org/CorpusID:211133022}
+}</pre>
+        </details>
+      </div>
+
+
+      <footer style="margin-top:24px;color:var(--muted)">© <span id="y"></span> Joëlle Hanna.</footer>
+    </section>
+  </main>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+  window.addEventListener('DOMContentLoaded', function(){
+    if (window.lucide && window.lucide.createIcons) { window.lucide.createIcons(); }
+  });
+</script>
+</body>
+</html>

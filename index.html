@@ -1,228 +1,122 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joëlle — PhD Candidate</title>
-  <meta name="description" content="Personal academic website for Joëlle, PhD candidate." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Joëlle Hanna – Homepage</title>
+  <meta name="description" content="" />
+  <link href="style.css" rel="stylesheet" />
   <style>
-    :root{
-      --bg: #0b0c10;
-      --card: #111317;
-      --muted: #b9c1d6;
-      --text: #e9ecf5;
-      --accent: #7aa2f7;
-      --accent-2: #8bd5ca;
-      --border: #1b1f2a;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1000px;margin:0 auto;padding:32px}
-    header{position:sticky;top:0;background:linear-gradient(180deg,rgba(11,12,16,.9),rgba(11,12,16,.6) 60%,rgba(11,12,16,0));backdrop-filter:saturate(140%) blur(8px);z-index:10}
-    nav{display:flex;gap:20px;align-items:center;justify-content:flex-end;padding:14px 32px;border-bottom:1px solid var(--border)}
-    nav a{font-weight:600;color:var(--muted)}
-    nav a:hover{color:var(--text)}
-    .hero{display:grid;grid-template-columns:160px 1fr;gap:24px;align-items:center;padding:40px 0}
-    .avatar{width:160px;height:160px;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow);background:#0f1115 url('portrait.jpg') center/cover no-repeat}
-    h1{font-size:40px;line-height:1.15;margin:0}
-    .tag{display:inline-block;padding:6px 10px;border:1px solid var(--border);border-radius:999px;color:var(--muted);font-size:14px}
-    .lead{color:var(--muted);margin-top:10px}
-    .buttons{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid var(--border);background:var(--card);color:var(--text);font-weight:600;box-shadow:var(--shadow)}
-    .btn:hover{transform:translateY(-1px)}
+  main{display:grid;grid-template-columns:var(--sidebar) 1fr;gap:28px;margin-top:26px}
 
-    section{margin:28px 0}
-    .grid{display:grid;gap:16px}
-    .cols-2{grid-template-columns:1fr 1fr}
-    @media (max-width:800px){.hero{grid-template-columns:1fr}.avatar{width:120px;height:120px}.cols-2{grid-template-columns:1fr}}
-
-    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
-    .card h3{margin:0 0 6px 0;font-size:20px}
-    .muted{color:var(--muted)}
-    .pill{display:inline-block;background:rgba(122,162,247,.12);color:var(--accent);border:1px solid rgba(122,162,247,.35);padding:4px 8px;border-radius:999px;font-size:12px;margin-right:6px}
-
-    .list{list-style:none;margin:0;padding:0}
-    .list li{padding:12px 0;border-bottom:1px dashed var(--border)}
-    .list li:last-child{border-bottom:none}
-
-    footer{margin:40px 0 10px;color:var(--muted);font-size:14px}
-    .small{font-size:14px}
-    .anchor{opacity:.6;margin-left:6px}
-    .anchor:hover{opacity:1}
-
-    /* Simple light mode toggle */
-    .toggle{position:fixed;right:18px;bottom:18px;background:var(--card);border:1px solid var(--border);border-radius:999px;padding:10px 14px;cursor:pointer;box-shadow:var(--shadow);font-weight:600}
-    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-    .light{--bg:#f7f8fb;--card:#ffffff;--muted:#506079;--text:#0e1320;--accent:#3355ff;--accent-2:#0a8f67;--border:#e7e9f0}
+    @media (max-width: 760px) {
+      main {
+        grid-template-columns:1fr
+      }
+      .sidebar{position:relative;top:auto}
+      header{position:static}
+      .topbar{flex-wrap:wrap;height:auto;padding:10px 0}
+  }
   </style>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#teaching">Teaching</a>
-      <a href="#service">Service</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="wrap topbar" style="display: flex; color: var(--accent-fg);">
+      <div class="brand alegreya-1orb4">Joëlle Hanna</div>
+      <nav class="navbar" aria-label="Primary">
+        <ul>
+          <li><a style="color: var(--accent-fg);" href="publications.html">Publications</a></li>
+          <li><a style="color: var(--accent-fg);" href="cv.html">CV</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <div class="wrap">
-    <section class="hero">
-      <div class="avatar" title="Add your photo as portrait.jpg"></div>
-      <div>
-        <h1>Joëlle <span class="muted">— PhD Candidate</span></h1>
-        <div class="tag">Research areas: <span class="muted">Remote Sensing • Computer Vision • Multimodal Learning</span></div>
-        <p class="lead">I am a PhD candidate at <em>[Your University/Institute]</em>. My research explores mixture-of-experts transformers for multimodal satellite imagery, with applications to disaster assessment and geospatial understanding. I'm on the job market (finishing soon!).</p>
-        <div class="buttons">
-          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
-          <a class="btn" href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a>
-          <a class="btn" href="mailto:your.email@university.edu">Email Me</a>
-          <a class="btn" href="#publications">See Publications</a>
+    <main>
+      <aside class="sidebar card" aria-label="Profile">
+        <div class="profile">
+          <img src="images/profile.jpg" alt="Profile photo" class="avatar" />
+          <div class="name">Joëlle Hanna</div>
+          <p class="bio">PhD Candidate in Computer Vision and Remote Sensing.</p>
+          <p class="affil">School of Computer Science</p>
+          <p class="affil">University of St.Gallen</p>
+          <p class="affil">Switzerland</p>
         </div>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About<a class="anchor" href="#about">#</a></h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Bio</h3>
-          <p>I'm a final-year PhD candidate advised by <em>[Advisor(s)]</em> in the <em>[Lab/Department]</em> at <em>[University]</em>. My work focuses on training and pruning modality-aware experts in Vision Transformers for remote sensing. Previously, I worked on diffusion models for cross-modality translation (S1→S2) and weakly-supervised segmentation.</p>
-        </div>
-        <div class="card">
-          <h3>News</h3>
-          <ul class="list small">
-            <li><span class="pill">2025</span> Paper accepted to <em>[Conference]</em> Workshop on EarthVision.</li>
-            <li><span class="pill">2025</span> Preprint: <em>MAPEX: Modality-Aware Pruning of Experts for Remote Sensing Foundation Models</em>.</li>
-            <li><span class="pill">2024</span> New dataset/tooling release for multimodal satellite learning.</li>
+        <div class="links">
+          <ul>
+            <li><i data-lucide="mail"></i> <a href="mailto:joellekhanna@gmail.com">Email</a></li>
+            <li><i data-lucide="linkedin"></i> <a href="https://www.linkedin.com/in/joelle-hanna/">LinkedIn</a></li>
+            <li><i data-lucide="github"></i> <a href="https://github.com/joellehanna">GitHub</a></li>
+            <li><i data-lucide="graduation-cap"></i> <a href="https://scholar.google.com/citations?user=4nEFMGAAAAAJ&hl=en&oi=ao">Google Scholar</a></li>
           </ul>
         </div>
-      </div>
-    </section>
+      </aside>
 
-    <section id="research">
-      <h2>Research<a class="anchor" href="#research">#</a></h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Interests</h3>
-          <p>Mixture-of-Experts (MoE), Vision Transformers, Multimodal Fusion (S1/S2/IR), Foundation Models for Earth Observation, Weakly Supervised Segmentation, Diffusion Models, Geographic-aware representations.</p>
-        </div>
-        <div class="card">
-          <h3>Open to</h3>
-          <p>Postdoc and research scientist roles in ML/CV/RS. I'm also interested in collaborations with industry and government partners on disaster response and risk modeling.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications">
-      <h2>Publications<a class="anchor" href="#publications">#</a></h2>
-      <ul class="list">
-        <li>
-          <strong>MAPEX: Modality-Aware Pruning of Experts for Remote Sensing Foundation Models</strong><br>
-          <span class="muted">Joëlle, et al. ICCV 2025 (Workshop) — <a href="#">paper</a> · <a href="#">code</a> · <a href="#" onclick="copyBib(event, 'mapex')">BibTeX</a></span>
-        </li>
-        <li>
-          <strong>Translating Sentinel-2 from Sentinel-1 Using Diffusion Models</strong><br>
-          <span class="muted">Joëlle, et al. Preprint 2025 — <a href="#">paper</a> · <a href="#">code</a> · <a href="#" onclick="copyBib(event, 's1s2diff')">BibTeX</a></span>
-        </li>
-        <li>
-          <strong>Know Your Attention Maps: Class-specific Token Masking for Weakly Supervised Semantic Segmentation</strong><br>
-          <span class="muted">Joëlle, et al. ICCV 2025 (submitted) — <a href="#">paper</a> · <a href="#">code</a> · <a href="#" onclick="copyBib(event, 'kyam')">BibTeX</a></span>
-        </li>
-      </ul>
-    </section>
-
-    <section id="teaching">
-      <h2>Teaching<a class="anchor" href="#teaching">#</a></h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Teaching Assistant</h3>
-          <p>Computer Vision (Graduate), Remote Sensing ML (Graduate). Led labs on ViTs, MoE, and diffusion models; mentored student projects.</p>
-        </div>
-        <div class="card">
-          <h3>Mentorship</h3>
-          <p>Supervised <em>[N]</em> MSc/BSc theses on multimodal fusion and segmentation; several students placed in PhD programs and industry.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="service">
-      <h2>Service<a class="anchor" href="#service">#</a></h2>
-      <ul class="list">
-        <li>Reviewer: CVPR, ICCV, NeurIPS (Datasets & Benchmarks), TGRS.</li>
-        <li>Organizer: <em>[Workshop/Reading Group]</em>.</li>
-        <li>Open-source: Maintainer of <em>[Repo]</em> for remote sensing model zoo.</li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact<a class="anchor" href="#contact">#</a></h2>
-      <div class="grid cols-2">
-        <div class="card">
-          <h3>Get in touch</h3>
-          <p>Email: <a href="mailto:your.email@university.edu">your.email@university.edu</a><br>
-          Scholar: <a href="https://scholar.google.com/">Google Scholar</a> · GitHub: <a href="https://github.com/yourhandle">@yourhandle</a> · Twitter/X: <a href="https://twitter.com/yourhandle">@yourhandle</a> · LinkedIn: <a href="https://www.linkedin.com/in/yourhandle/">/in/yourhandle</a></p>
-        </div>
-        <div class="card">
-          <h3>Office</h3>
-          <p><em>[Building, Street]</em><br><em>[City, Country]</em></p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      © <span id="year"></span> Joëlle. Built with vanilla HTML/CSS, deployed on GitHub Pages.
-    </footer>
+      <section class="card content">
+        <h1 class="alegreya-1orb4">About me</h1>
+        <p class="note">I am a researcher in computer vision and remote sensing, currently pursuing a PhD at the University of St. Gallen under the supervision of <a href="https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/f72a2a1d-94ae-4b74-ae82-cc898ae53284/" target="_blank" rel="noopener">Damian Borth</a> and the co-supervision of <a href="https://www.hft-stuttgart.com/p/michael-mommert" target="_blank" rel="noopener">Michael Mommert</a> and <a href="https://rs.ipb.uni-bonn.de/people/prof-dr-ing-ribana-roscher/index.html" target="_blank" rel="noopener">Ribana Roscher</a>. My research focuses on building multimodal models for Earth observation, with an emphasis on implicit supervision and modality-aware learning. I previously worked as a Student Researcher at Google Research in Zürich and completed my M.Sc. and B.Sc. in Electrical and Electronic Engineering at EPFL. My work explores how physical, architectural, and modality-level signals can guide the learning in remote sensing systems.
+        </p>
+        <h2 class="alegreya-1orb4" id="news">News</h2>
+        <p class="year">2025</p>
+        <ul class="list-tight news">
+          <li class="highlight paper"><span><i data-lucide="newspaper"></i></span>One paper accepted at ICCV "Know Your Attention Maps: Class-specific Token Masking for Weakly Supervised Semantic Segmentation" <a href="https://arxiv.org/abs/2507.06848">[arxiv]</a></li>
+          <li>One poster accepted at the Swiss Remote Sensing Days</li>
+          <li>Gave a <a href="https://airdrive.eventsair.com/eventsairwesteuprod/production-nikal-public/2164e35548b447f0b21f1fc72050b937">talk</a> at the ESA-NASA International workshop on AI Foundation Model for Earth Observation on a Modality-Aware Pruning of Experts for Multi-Modal
+Remote Sensing Foundation Models</li>
+          <li>Reviewer for CVPR, EarthVision, ICCV</li>
+        </ul>
+        <p class="year">2024</p>
+        <ul class="list-tight news">
+          <li>Co-supervised a master thesis on "SAR-to-RGB Translation with Latent Diffusion for Earth Observation" <a href="https://arxiv.org/abs/2504.11154">[arxiv]</a></li>
+          <li>One poster presented at the ETH AI + Environment summits (more info <a href="https://summit.biodivx.org/">here</a>) on "Sparse Multimodal Vision Transformer for Weakly Supervised Semantic Segmentation" </li>
+          <li>Gave a <a href="https://www.2024.ieeeigarss.org/tutorials.php#tut7">tutorial</a> on "Data-Efficient Deep Learning for Earth Observation" at the 2024 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)</li>
+          <li>Teacher Assistant for the Artificial Intelligence course - taught by <a href="https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/f72a2a1d-94ae-4b74-ae82-cc898ae53284/" target="_blank" rel="noopener">Damian Borth</a>.</li>
+          <li>Teacher Assistant for the Computer Vision course - taught by <a href="https://people.ee.ethz.ch/~csakarid/">Christos Sakaridis</a>.</li>
+          <li>Reviewer for CVPR, EarthVision, ECCV, WACV</li>
+        </ul>
+        <p class="year">2023</p>
+        <ul class="list-tight news">
+          <li class="highlight milestone"><span><i data-lucide="star"></i></span>Did an internship at Google Research (Health AI), on building a Conversational Assistant for Radiotherapy Patients using MedPalm</li>
+          <li>Co-supervised a bachelor thesis on "Deep Clustering for Traffic Camera Vehicle Detection"</li>
+          <li class="highlight paper"><span><i data-lucide="newspaper"></i></span>One paper accepted at the CVPR EarthVision Workshop on "Sparse Multimodal Vision Transformer for Weakly Supervised Semantic Segmentation" <a href="https://openaccess.thecvf.com/content/CVPR2023W/EarthVision/papers/Hanna_Sparse_Multimodal_Vision_Transformer_for_Weakly_Supervised_Semantic_Segmentation_CVPRW_2023_paper.pdf">[paper]</a></li>
+          <li class="highlight paper"><span><i data-lucide="newspaper"></i></span>One paper accepted in the IEEE Transactions on Geoscience and Remote Sensing on "Physics-Guided Multitask Learning for Estimating Power Generation and CO2 Emissions
+from Satellite Imagery" <a href="https://ieeexplore.ieee.org/abstract/document/10153694">[paper]</a></li>
+          <li class="highlight paper"><span><i data-lucide="newspaper"></i></span>One paper accepted in the IEEE International Geoscience and Remote Sensing Symposium on "Ben-ge: Extending BigEarthNet with Geographical and Environmental Data" <a href="https://arxiv.org/abs/2307.01741">[arxiv]</a></li>
+          <li>Gave a <a href="https://www.2023.ieeeigarss.org/tutorials.php#tut102">tutorial</a> on "Data-Efficient Deep Learning for Earth Observation" at the 2023 IEEE International Geoscience and Remote Sensing Symposium (IGARSS)</li>
+          <li>Participated in the Swiss Remote Sensing days with a poster.</li>
+          <li>Co-hosted the Swiss Remote Sensing days at the University of St.Gallen.</li>
+          <li>Teacher Assistant for the Computer Vision course - taught by <a href="https://www.hft-stuttgart.com/p/michael-mommert" target="_blank" rel="noopener">Michael Mommert</a>.</li>
+          <li class="highlight milestone"><span><i data-lucide="star"></i></span>Defended my PhD porposal on "multimodal representation learning for Earth Observation".</li>
+          <li>Reviewer for WACV</li>
+        </ul>
+        <p class="year">2022</p>
+        <ul class="list-tight news">
+          <li class="highlight milestone"><span><i data-lucide="star"></i></span>Won the Best Student Paper Award for the paper "Self-supervised Vision Transformers for Land-cover Segmentation and Classification" at CVPR EarthVision Workshop</a></li>
+          <li class="highlight paper"><span><i data-lucide="newspaper"></i></span>One paper accepted at the CVPR EarthVision Workshop on "Self-supervised Vision Transformers for Land-cover Segmentation and Classification" <a href="https://openaccess.thecvf.com/content/CVPR2022W/EarthVision/papers/Scheibenreif_Self-Supervised_Vision_Transformers_for_Land-Cover_Segmentation_and_Classification_CVPRW_2022_paper.pdf">[paper]</a></li>
+          <li class="highlight paper"><span><i data-lucide="newspaper"></i></span>One paper accepted in the IEEE International Geoscience and Remote Sensing Symposium on "A Multimodal Approach for Event Detection: Study of UK Lockdowns in the year 2020" <a href="https://www.alexandria.unisg.ch/server/api/core/bitstreams/977414c6-1925-463a-ba28-1381584c24cd/content">[paper]</a></li>
+          <li>Participated in the Swiss Remote Sensing days with a poster.</li>
+          <li>Gave a Talk at the AI4EO Symposium in the Technical University of Munich.</li>
+          <li>Invited Talk at the Visual Intelligence seminar, The Arctic University of Norway on "Self-supervised Vision Transformers for Land-cover Segmentation and Classification".</li>
+        </ul>
+        <p class="year">2021</p>
+        <ul class="list-tight news">
+          <li class="highlight paper"><span><i data-lucide="newspaper"></i></span>One paper accepted at the Tackling Climate Change with Machine Learning workshop in NeurIPS, on "Multitask Learning for Estimating Power Plant Greenhouse Gas Emissions
+from Satellite Imagery" <a href="https://www.alexandria.unisg.ch/server/api/core/bitstreams/d520abfb-c25d-495a-98ca-87e53c6088fb/content">[paper]</a></li>
+          <li>One abstract accepted at the ESA-ECMWF Workshop on "Estimating Industrial Greenhouse Gas Emissions from Satellite Imagery" <a href="https://www.alexandria.unisg.ch/server/api/core/bitstreams/977414c6-1925-463a-ba28-1381584c24cd/content">[paper]</a></li>
+          <li>Started my PhD in the <a href="https://ics.unisg.ch/chairs/damian-borth-artificial-intelligence-and-machine-learning/">AIML Lab</a> in the University of St Gallen
+        </ul>
+        <footer>© <span id="y"></span> Joëlle Hanna</footer>
+      </section>
+    </main>
   </div>
 
-  <button class="toggle" id="modeBtn" aria-live="polite"><span id="modeLabel">Toggle light</span></button>
-
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script>
-    // Light/Dark toggle
-    const btn = document.getElementById('modeBtn');
-    const label = document.getElementById('modeLabel');
-    const apply = () => {
-      if(localStorage.getItem('theme') === 'light'){
-        document.documentElement.classList.add('light');
-        label.textContent = 'Toggle dark';
-      } else {
-        document.documentElement.classList.remove('light');
-        label.textContent = 'Toggle light';
-      }
-    };
-    btn.addEventListener('click', ()=>{
-      const next = localStorage.getItem('theme') === 'light' ? 'dark' : 'light';
-      if(next==='light') localStorage.setItem('theme','light'); else localStorage.removeItem('theme');
-      apply();
+    document.getElementById('y').textContent = new Date().getFullYear();
+    window.addEventListener('DOMContentLoaded', function(){
+      if (window.lucide && window.lucide.createIcons) { window.lucide.createIcons(); }
     });
-    apply();
-
-    // Year
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Minimal BibTeX copy helper
-    const bibs = {
-      mapex: `@inproceedings{joelle2025mapex,\n  title={MAPEX: Modality-Aware Pruning of Experts for Remote Sensing Foundation Models},\n  author={Joëlle and others},\n  booktitle={ICCV Workshops},\n  year={2025}\n}`,
-      s1s2diff: `@article{joelle2025s1s2diff,\n  title={Translating Sentinel-2 from Sentinel-1 Using Diffusion Models},\n  author={Joëlle and others},\n  journal={arXiv preprint arXiv:XXXXX},\n  year={2025}\n}`,
-      kyam: `@article{joelle2025kyam,\n  title={Know Your Attention Maps: Class-specific Token Masking for Weakly Supervised Semantic Segmentation},\n  author={Joëlle and others},\n  journal={ICCV},\n  year={2025}\n}`
-    };
-    function copyBib(e, key){
-      e.preventDefault();
-      const text = bibs[key] || '';
-      navigator.clipboard.writeText(text).then(()=>{
-        const t = e.target; const old = t.textContent; t.textContent = 'Copied!'; setTimeout(()=> t.textContent = 'BibTeX', 1200);
-      });
-    }
   </script>
 </body>
 </html>
-

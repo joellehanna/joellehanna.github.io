@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joëlle Hanna – Curriculum Vitae</title>
+  <meta name="description" content="Curriculum Vitae" />
+  <link rel="canonical" href="/cv.html" />
+  <link href="style.css" rel="stylesheet" />
+  <style>
+    .card{background:var(--card);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow)}
+    main{margin-top:26px}
+    .content{padding:24px}
+    .content h1{margin:0 0 4px}
+    .muted{color:var(--muted)}
+    .two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    ul.compact{margin:6px 0 0 18px}
+    ul.compact li{margin:4px 0}
+    @media (max-width:760px){.two-col{grid-template-columns:1fr}}
+
+    /* Section styling */
+    .section{margin-top:30px}
+    .section h2{
+      font-size:18px;
+      font-weight:700;
+      border-bottom:2px solid var(--border);
+      padding-bottom:4px;
+      margin-bottom:12px;
+      text-transform:uppercase;
+      letter-spacing:0.03em;
+    }
+
+    /* Entries inside sections */
+    .item{
+      margin:14px 0;
+      padding:6px 0 0;
+    }
+    .item strong{
+      display:block;
+      font-weight:600;
+      font-size:15.5px;
+      margin-bottom:2px;
+      color:var(--text);
+    }
+    .subtle{color:var(--muted); font-size:14px}
+  </style>
+</head>
+<body>
+
+
+  <header>
+    <div class="wrap topbar" style="display: flex; color: var(--accent-fg);">
+      <div class="brand alegreya-1orb4"><a href="index.html" aria-label="Home">Joëlle Hanna</a></div>
+      <nav class="navbar" aria-label="Primary">
+        <ul>
+          <li><a style="color: var(--accent-fg);" href="index.html">Home</a></li>
+          <li><a style="color: var(--accent-fg);" href="publications.html">Publications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<div class="wrap">
+  <main class="card content">
+    <h1>Curriculum Vitae</h1>
+    <p class="muted">
+      Last updated <span id="updated"></span> ·
+      <a target="_blank" href="files/Hanna_Resume.pdf" download>Download PDF</a>
+    </p>
+
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="item">
+        <strong>PhD in Machine Learning & Computer Vision</strong> University of St. Gallen, 2021-present
+        <div class="subtle">Advisor: <a href="https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/f72a2a1d-94ae-4b74-ae82-cc898ae53284/" target="_blank" rel="noopener">Damian Borth</a></div>
+        <ul class="compact">
+          <li><em>Thesis:</em> Learning from Implicit Signals for Remote Sensing - exploring physical, attention-based, modality, and model-space supervision.</li>
+          <li>Focus: multimodal foundation models, weak supervision.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <strong>M.Sc. in Data Science</strong>  EPFL, 2018-2020
+        <ul class="compact">
+          <li><em>Master thesis:</em> “Iterative Self-Learning: Reducing the Cost in ASR Systems” (Swisscom Digital Lab).</li>
+          <li>Focus: machine learning, computer vision, NLP.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <strong>B.Sc. in Electrical & Electronic Engineering</strong> EPFL, 2015-2018
+        <ul class="compact">
+          <li>Focus: signal processing, image processing.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Professional Experience</h2>
+
+      <div class="item">
+        <strong>PhD Student Researcher - Google Research (Health AI)</strong> Zürich · Oct 2023 - Jan 2024
+        <ul class="compact">
+          <li>Developed conversational assistant for radiotherapy patients (Med-PaLM-based).</li>
+          <li>Worked on retrieval grounding and clinical evaluation setup.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <strong>Machine Learning Intern - Swisscom Digital Lab</strong> Lausanne · Feb 2020 - Sept 2020
+        <ul class="compact">
+          <li>Developed active and semi-supervised learning for low-cost ASR data labeling.</li>
+          <li>Created scalable data pipelines for iterative self-training.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <strong>Machine Learning Intern - Logmind AI</strong> Lausanne · Jun 2019 – Sept 2019
+        <ul class="compact">
+          <li>Implemented anomaly detection and predictive maintenance from time-series logs.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Teaching</h2>
+
+      <div class="item">
+        <strong>Teaching Assistant</strong>
+        <ul class="compact">
+          <li>Introduction to ML/DL - 2025 (Instructor: <a href="https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/f72a2a1d-94ae-4b74-ae82-cc898ae53284/" target="_blank">Damian Borth</a>)</li>
+          <li>Computer Vision - 2023 (Instructor: <a href="https://www.hft-stuttgart.com/p/michael-mommert" target="_blank" rel="noopener">Michael Mommert</a>), 2024 (Instructor: <a href="https://people.ee.ethz.ch/~csakarid/" target="_blank">Christos Sakaridis</a>)</li>
+          <li>Artificial Intelligence - 2024, 2025 (Instructor: <a href="https://www.unisg.ch/de/universitaet/ueber-uns/organisation/detail/person-id/f72a2a1d-94ae-4b74-ae82-cc898ae53284/" target="_blank">Damian Borth</a>)</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <strong>Co-supervision</strong>
+        <ul class="compact">
+          <li>Kaan Aydin (Master) - “SAR-to-RGB Translation with Latent Diffusion for Earth Observation”, 2025</li>
+          <li>Yosef Asefaw (Bachelor) - “Deep Clustering for Traffic Camera Vehicle Detection”, 2024</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+  <h2>Skills</h2>
+
+  <div class="item">
+    <strong>Programming</strong>
+    <ul class="compact">
+      <li>Python (PyTorch, TensorFlow, NumPy, Pandas, scikit-learn, openCV)</li>
+      <li>Bash, Git, Docker, Linux</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>Machine Learning & Vision</strong>
+    <ul class="compact">
+      <li>Deep Learning, Vision Transformers, Multimodal Learning</li>
+      <li>Diffusion Models, Masked Autoencoders, Self-supervised Learning</li>
+      <li>Mixture-of-Experts, Model Pruning, Foundation Models</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>Remote Sensing & Data</strong>
+    <ul class="compact">
+      <li>Multispectral and radar imagery</li>
+      <li>Geospatial data analysis with rasterio and geopandas</li>
+      <li>Data preprocessing, large-scale dataset creation</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <strong>Communication & Writing</strong>
+    <ul class="compact">
+      <li>Academic writing and conference presentations</li>
+      <li>Fluent in English, French and Arabic, Basic German speaker</li>
+    </ul>
+  </div>
+</div>
+
+    <div class="section">
+      <h2>Awards</h2>
+      <ul class="compact">
+        <li>Best Student Paper Award, CVPR EarthVision Workshop 2022</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Publications</h2>
+      <p>See the <a href="publications.html">Publications page</a>.</p>
+    </div>
+  </main>
+</div>
+
+<script>
+  const d=new Date();
+  document.getElementById('updated').textContent=d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,'0')+"-"+String(d.getDate()).padStart(2,'0');
+</script>
+</body>
+</html>
