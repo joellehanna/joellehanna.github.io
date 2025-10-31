@@ -75,3 +75,31 @@ footer{border-top:1px solid var(--border);margin-top:40px;padding-top:18px;color
   color: var(--text) !important;
   filter: brightness(110%);
 }
+
+@media (max-width: 768px) {
+  .topbar{
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0.625rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 0.75rem 20px;
+  }
+  .list-tight {
+    margin: 6px 0 0 6px;
+  }
+  ul.compact {
+    padding-left: 1rem;
+  }
+  .news > li.highlight > span {
+    position: absolute;
+    transform: translate(-100%, 0%);
+    left: -24px;
+  }
+  main {
+    margin-top: 1.25rem;
+  }
+}

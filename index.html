@@ -7,16 +7,21 @@
   <meta name="description" content="" />
   <link href="style.css" rel="stylesheet" />
   <style>
-  main{display:grid;grid-template-columns:var(--sidebar) 1fr;gap:28px;margin-top:26px}
+    main {
+      display:grid;
+      grid-template-columns: var(--sidebar) 1fr;
+      gap:28px;
+      margin-top:26px;
+    }
 
-    @media (max-width: 760px) {
+    @media (max-width: 768px) {
       main {
         grid-template-columns:1fr
       }
       .sidebar{position:relative;top:auto}
       header{position:static}
-      .topbar{flex-wrap:wrap;height:auto;padding:10px 0}
-  }
+    }
+
   </style>
 </head>
 <body>
